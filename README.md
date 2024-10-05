@@ -30,7 +30,7 @@
 
 ## Tech Stacks <a name="tech-stacks"></a>
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
+<!-- - ![Django](https://img.shields.io/badge/Django-3.2%2B-green) -->
 - ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
