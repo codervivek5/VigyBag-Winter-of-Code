@@ -1,14 +1,14 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d476cdf0-7a01-4bcb-b61e-9f10b12216c5" width="200" alt="Logo">
+  <img src="../../VigyBag-Winter-of-Code/frontend/src/assets/Vigybag-logo.png" width="200" alt="Logo">
 <h1>VigyBag Winter of Code</h1>
 </div>
 
 <div align="center">
   
 <p>
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
+<!-- ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=codervivek5/VigyBag%20&countColor=%2523263759&style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/codervivek5/VigyBag?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/codervivek5/VigyBag?style=for-the-badge) -->
 </p>
 </div>
 
@@ -30,7 +30,7 @@
 
 ## Tech Stacks <a name="tech-stacks"></a>
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-<!-- - ![Django](https://img.shields.io/badge/Django-3.2%2B-green) -->
+- ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
@@ -43,7 +43,7 @@ We welcome contributions from the community! Please follow these steps to get in
 
 ## Contributors <a name="contributors"></a>
 We are grateful to the following individuals for their contributions:
-![Contributors](https://contrib.rocks/image?repo=codervivek5/VigyBag)
+![Contributors](https://contrib.rocks/image?repo=codervivek5/VigyBag-Winter-of-Code)
 
 ## License <a name="license"></a>
 This project is licensed under the MIT License.
