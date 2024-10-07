@@ -1,5 +1,3 @@
-Here's an updated version of your README for Hacktoberfest 2024:
-
 ---
 
 <div align="center">
