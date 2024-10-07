@@ -65,5 +65,3 @@ This project is licensed under the MIT License.
 For questions or inquiries, feel free to contact us on [LinkedIn](https://www.linkedin.com/company/vigybag/) or [Twitter](https://twitter.com/codervivek5/).
 
 ---
-
-This version emphasizes participation in **Hacktoberfest 2024** and encourages developers to contribute meaningfully during the event.
