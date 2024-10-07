@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="../../VigyBag-Winter-of-Code/frontend/src/assets/Vigybag-logo.png" width="200" alt="Logo">
+  <img src="https://github.com/user-attachments/assets/a5e6031c-299e-449a-baba-014f2887ce2c" width="200" alt="Logo">
+
 <h1>VigyBag Winter of Code</h1>
 </div>
 
