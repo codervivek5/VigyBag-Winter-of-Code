@@ -1,5 +1,3 @@
----
-
 <div align="center">
   <img src="../../VigyBag-Winter-of-Code/frontend/src/assets/Vigybag-logo.png" width="200" alt="Logo">
 <h1>VigyBag Winter of Code</h1>
@@ -63,5 +61,3 @@ This project is licensed under the MIT License.
 
 ## Contact <a name="contact"></a>
 For questions or inquiries, feel free to contact us on [LinkedIn](https://www.linkedin.com/company/vigybag/) or [Twitter](https://twitter.com/codervivek5/).
-
----
