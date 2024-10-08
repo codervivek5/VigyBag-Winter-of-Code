@@ -481,7 +481,7 @@ export default function HomePage() {
                       />
                     </div>
                     <h2 className="text-lg font-bold text-white mb-3">PROJECTS FOR ALL LEVELS</h2>
-                    <p className="text-xs text-gray-400 mb-4">From beginner to advanced, find the perfect project to contribute to and learn from.</p>
+                    <p className="text-xs text-gray-400 mb-4">From Beginner to Advanced, find the perfect project to contribute to and learn from.</p>
                     <img
                       src="https://kit8.net/wp-content/uploads/2020/12/Coding@2x.png"
                       alt="Coding illustration"
