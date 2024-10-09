@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../User/components/Home/Navbar";
+import Footer from "../User/components/Home/Footer";
 
 const UserLayout = () => {
 //    const location = useLocation();
@@ -12,9 +14,10 @@ const UserLayout = () => {
       {/* {isAdminRoute ? <AdminNavbar /> : <UserNavbar />}
       
       <ScrollProgressBar /> */}
+      {/* <Navbar/> */}
       <Outlet />
-      {/* <Footer />
-      <GoToTop />
+       <Footer />
+      {/*<GoToTop />
       {!isAdminRoute && <FeedbackButton />} */}
     </>
   );
