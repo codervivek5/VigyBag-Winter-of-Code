@@ -12,11 +12,11 @@ const timelineData = [
   },
   {
     date: '1st October',
-    event: 'Coding Period Starts',
+    event: 'Community Bonding Period Starts',
   },
   {
     date: '3rd October',
-    event: 'Community bonding period starts',
+    event: 'Coding Period Starts',
   },
   {
     date: '5th October',
