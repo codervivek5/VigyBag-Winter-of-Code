@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { Code, Clock, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
+import {Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import Slider from 'react-slick'
 import Lenis from '@studio-freight/lenis'
@@ -407,19 +408,19 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              <button className="text-gray-300 hover:text-white text-xs">Home</button>
-              <button className="text-gray-300 hover:text-white text-xs">About</button>
-              <button className="text-gray-300 hover:text-white text-xs">Projects</button>
-              <button className="text-gray-300 hover:text-white text-xs">Mentors</button>
+              <Link to='/'> <button className="text-gray-300 hover:text-white text-xs">Home</button></Link>
+              <Link to='/about'> <button className="text-gray-300 hover:text-white text-xs">About</button></Link>
+              <Link to='/projects'> <button className="text-gray-300 hover:text-white text-xs">Projects</button></Link>
+              <Link to='/mentors'> <button className="text-gray-300 hover:text-white text-xs">Mentors</button></Link>
             </motion.nav>
-            <motion.button
+            <Link to="/select"><motion.button
               className="bg-gray-800 text-white px-4 py-2 rounded-full text-xs hover:bg-gray-700 transition-colors"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             >
               Register Now
-            </motion.button>
+            </motion.button></Link>
           </header>
         
           <main className="flex-1 pt-16">
