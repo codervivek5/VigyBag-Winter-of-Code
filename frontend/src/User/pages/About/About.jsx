@@ -125,7 +125,7 @@ export default function About() {
             <RewardCard
               icon={<Rocket className="w-16 h-16" />}
               title="Goodies & Cool Stickers"
-              description="Get exclusive JWoC merchandise, stickers, and certificates of completion."
+              description="Get exclusive VWoC merchandise, stickers, and certificates of completion."
             />
           </div>
         </div>
