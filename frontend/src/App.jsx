@@ -6,6 +6,7 @@ import PA_or_Contro from './User/pages/Popups/PA_or_Contro'
 import About from './User/pages/About/About'
 import Projects from './User/pages/Projects/Projects'
 import Mentors from './User/pages/Mentors/Mentors'
+import Auth from './User/pages/Mentors/Login'
 
 
 // Main App Component
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='about' element={<About/>} /> 
           <Route path='projects' element={<Projects />} /> 
           <Route path='mentors' element={<Mentors />} /> 
+          <Route path='auth' element={<Auth/>} /> 
           
         </Route>
       </Routes>
