@@ -12,11 +12,11 @@ const timelineData = [
   },
   {
     date: '1st October',
-    event: 'Coding Period Starts',
+    event: 'Community Bonding Period Starts',
   },
   {
     date: '3rd October',
-    event: 'Community bonding period starts',
+    event: 'Coding Period Starts',
   },
   {
     date: '5th October',
@@ -125,7 +125,7 @@ export default function About() {
             <RewardCard
               icon={<Rocket className="w-16 h-16" />}
               title="Goodies & Cool Stickers"
-              description="Get exclusive JWoC merchandise, stickers, and certificates of completion."
+              description="Get exclusive VWoC merchandise, stickers, and certificates of completion."
             />
           </div>
         </div>
