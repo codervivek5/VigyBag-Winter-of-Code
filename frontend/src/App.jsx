@@ -21,6 +21,7 @@ const App = () => {
           <Route path='projects' element={<Projects />} /> 
           <Route path='mentors' element={<Mentors />} /> 
           
+          
         </Route>
       </Routes>
     </Router>
