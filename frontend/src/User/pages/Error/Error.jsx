@@ -16,11 +16,15 @@ const ErrorPage = () => {
         <p>
           ...maybe the page you're looking for is not found or never existed.
         </p>
-        <a href="https://www.google.co.in/" target="_blank" rel="noopener noreferrer">
-          <Link to='/'><button>
-            Back to home <i className="far fa-hand-point-right"></i>
-          </button></Link>
-        </a>
+        <Link 
+          to="/" 
+          className="home-button"
+          role="button"
+          aria-label="Navigate to home page"
+        >
+          Back to home
+          <span className="icon" aria-hidden="true">→</span>
+        </Link>
       </div>
     </div>
   );
