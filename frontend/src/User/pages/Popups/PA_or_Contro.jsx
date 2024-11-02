@@ -34,6 +34,8 @@ const Popup = () => {
             <button 
               className="absolute top-4 right-4 text-red hover:text-gray-800 font-600 text-3xl"
               onClick={handleCloseClick}
+              aria-label="Close popup"
+              role="button"
             >
               &times;
             </button>
