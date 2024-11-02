@@ -14,7 +14,7 @@ const UserLayout = () => {
       {/* {isAdminRoute ? <AdminNavbar /> : <UserNavbar />}
       
       <ScrollProgressBar /> */}
-      {/* <Navbar/> */}
+      <Navbar/>
       <Outlet />
        <Footer />
       {/*<GoToTop />

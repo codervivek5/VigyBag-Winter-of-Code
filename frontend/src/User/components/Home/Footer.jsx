@@ -9,11 +9,14 @@ const Footer = () => {
         
         {/* Logo Section */}
         <div className="col-span-1 flex flex-col items-center md:items-start">
-          <img 
-            src={logo} 
-            alt="VWOC Logo" 
-            className="w-20 h-auto"
-          />
+          <div className="flex items-center">
+            <img 
+              src={logo} 
+              alt="VWOC Logo" 
+              className="w-20 h-auto mr-4"
+            />
+            <h2>VWoC</h2>
+          </div>
           <p className="mt-2 text-sm">&copy; vwoc 2024. All Rights Reserved.</p>
         </div>
 
@@ -23,10 +26,8 @@ const Footer = () => {
           <hr className="my-2 border-t border-gray-600" />
           <ul>
             <li><a href="#" className="hover:text-blue-400">VWoC Archive</a></li>
-            <li><a href="#" className="hover:text-blue-400">VWoC 2023</a></li>
-            <li><a href="#" className="hover:text-blue-400">VWoC 2022</a></li>
-            <li><a href="#" className="hover:text-blue-400">VWoC 2021</a></li>
-            <li><a href="#" className="hover:text-blue-400">VWoC 2020</a></li>
+           
+            <li><a href="#" className="hover:text-blue-400">VWoC 2024</a></li>
           </ul>
         </div>
 
