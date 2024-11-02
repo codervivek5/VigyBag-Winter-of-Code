@@ -7,6 +7,8 @@ import About from './User/pages/About/About'
 import Projects from './User/pages/Projects/Projects'
 import Mentors from './User/pages/Mentors/Mentors'
 import Auth from './User/pages/Mentors/Login'
+import Leaderboard  from './User/pages/Leaderboard/Leaderboard';
+import Error  from './User/pages/Error/Error';
 
 
 // Main App Component
@@ -17,13 +19,18 @@ const App = () => {
         {/* User Routes */}
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} /> 
-          <Route path='select' element={<PA_or_Contro />} /> 
+          
           <Route path='about' element={<About/>} /> 
           <Route path='projects' element={<Projects />} /> 
           <Route path='mentors' element={<Mentors />} /> 
           <Route path='auth' element={<Auth/>} /> 
+          <Route path='leaderboard' element={<Leaderboard/>} /> 
+          
+
           
         </Route>
+        <Route path='select' element={<PA_or_Contro />} /> 
+        <Route path='*' element={<Error/>} /> 
       </Routes>
     </Router>
   );

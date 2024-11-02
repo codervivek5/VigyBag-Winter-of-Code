@@ -170,23 +170,23 @@ const ProjectShowcase = () => {
         ))}
       </Slider>
       <button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2  p-2 rounded-full"
         onClick={() => sliderRef.current.slickPrev()}
       >
-        <ChevronLeft className="text-white" />
+        {/* <ChevronLeft className="text-white" /> */}
       </button>
       <button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2  p-2 rounded-full"
         onClick={() => sliderRef.current.slickNext()}
       >
-        <ChevronRight className="text-white" />
+        {/* <ChevronRight className="text-white" /> */}
       </button>
     </div>
   )
 }
 
-const MentorSpotlight = () => {
-  const mentors = [
+const ContributorsSpotlight = () => {
+  const contributors = [
     { name: 'Jane Doe', expertise: 'AI/ML', image: 'https://th.bing.com/th/id/OIP.mGcmaPrseO1StqjinTtGwwHaHN?rs=1&pid=ImgDetMain' },
     { name: 'John Smith', expertise: 'Blockchain', image: 'https://th.bing.com/th/id/OIP.2OW5JpvU6FoFKnG8pFHseQAAAA?rs=1&pid=ImgDetMain' },
     { name: 'Alice Johnson', expertise: 'Web Development', image: 'https://th.bing.com/th/id/OIP.MW5KCvdZjebeRLc2tEBoaAHaHa?rs=1&pid=ImgDetMain' },
@@ -194,17 +194,22 @@ const MentorSpotlight = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {mentors.map((mentor, index) => (
+      {contributors.map((contributor, index) => (
         <motion.div
           key={index}
           className="bg-gray-800 p-6 rounded-3xl"
           whileHover={{ scale: 1.05 }}
         >
-          <img src={mentor.image} alt={mentor.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
-          <h3 className="text-white text-lg font-bold text-center">{mentor.name}</h3>
-          <p className="text-gray-400 text-sm text-center">{mentor.expertise}</p>
+          <img src={contributor.image} alt={contributor.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
+          <h3 className="text-white text-lg font-bold text-center">{contributor.name}</h3>
+          <p className="text-gray-400 text-sm text-center">{contributor.expertise}</p>
         </motion.div>
       ))}
+      <div className="col-span-1 md:col-span-3 text-center mt-6">
+        <Link to="/all-contributors" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+          See More
+        </Link>
+      </div>
     </div>
   )
 }
@@ -393,35 +398,7 @@ export default function HomePage() {
         <Preloader />
       ) : (
         <div className="flex flex-col">
-          <header ref={headerRef} className=" fixed top-0 left-0 right-0 flex justify-between items-center p-4 md:p-6 backdrop-blur-md z-50 bg-opacity-80">
-            <motion.div 
-              className="flex items-center space-x-2"
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <img src={loader} alt="Vigybag Logo" className="w-10 h-10 object-contain" />
-            </motion.div>
-            <motion.nav 
-              className="hidden md:flex space-x-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              <Link to='/'> <button className="text-gray-300 hover:text-white text-xs">Home</button></Link>
-              <Link to='/about'> <button className="text-gray-300 hover:text-white text-xs">About</button></Link>
-              <Link to='/projects'> <button className="text-gray-300 hover:text-white text-xs">Projects</button></Link>
-              <Link to='/mentors'> <button className="text-gray-300 hover:text-white text-xs">Mentors</button></Link>
-            </motion.nav>
-            <Link to="/select"><motion.button
-              className="bg-gray-800 text-white px-4 py-2 rounded-full text-xs hover:bg-gray-700 transition-colors"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
-            >
-              Register Now
-            </motion.button></Link>
-          </header>
+          
         
           <main className="flex-1 pt-16">
             {/* Hero Section */}
@@ -532,11 +509,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Mentor Spotlight Section */}
+            {/* contributors Spotlight Section */}
             <div className="bg-[#121212ff] py-16">
               <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <h2 className="text-2xl font-bold text-white mb-8">Meet Our Mentors</h2>
-                <MentorSpotlight />
+                <h2 className="text-2xl font-bold text-white mb-8">Meet Our Contributors</h2>
+                <ContributorsSpotlight />
               </div>
             </div>
 
@@ -550,7 +527,7 @@ export default function HomePage() {
 
             {/* Newsletter Section */}
             <div className="bg-[#121212ff] py-16">
-              <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
+              <div className="max-w-3xl mx-auto px-4 md:px-8 text-center border border-gray-600 rounded-lg p-6">
                 <h2 className="text-2xl font-bold text-white mb-4">Stay Updated</h2>
                 <p className="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and opportunities.</p>
                 <NewsletterForm />
