@@ -114,18 +114,18 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <RewardCard
               icon={<Users className="w-16 h-16" />}
-              title="Paid Internship Opportunities"
-              description="Top performers get opportunities for paid internships with leading tech companies."
+              title="Community Bonding"
+              description="Collaborate with mentors and peers to enhance your open-source journey."
             />
             <RewardCard
               icon={<Gift className="w-16 h-16" />}
-              title="Coupons & Free Domains"
-              description="Receive free domains, cloud credits, and premium subscriptions to developer tools."
-            />
+              title="Certification"
+              description="Get a certificate that enhances your resume."
+              />
             <RewardCard
               icon={<Rocket className="w-16 h-16" />}
-              title="Goodies & Cool Stickers"
-              description="Get exclusive VWoC merchandise, stickers, and certificates of completion."
+              title="Social Media Shoutout"
+              description="Get recognized on social media with shoutouts and exclusive VWoC merchandise."
             />
           </div>
         </div>
