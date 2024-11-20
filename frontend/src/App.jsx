@@ -9,6 +9,7 @@ import Mentors from './User/pages/Mentors/Mentors'
 import Auth from './User/pages/Mentors/Login'
 import Leaderboard  from './User/pages/Leaderboard/Leaderboard';
 import Error  from './User/pages/Error/Error';
+import TermsAndConditions from './User/pages/TermsAndConditions/TermsAndConditions';
 
 
 // Main App Component
@@ -25,6 +26,7 @@ const App = () => {
           <Route path='mentors' element={<Mentors />} /> 
           <Route path='auth' element={<Auth/>} /> 
           <Route path='leaderboard' element={<Leaderboard/>} /> 
+          <Route path='terms-and-conditions' element={<TermsAndConditions/>} /> 
           
 
           

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { Code, Clock, ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import Slider from 'react-slick'
 import Lenis from '@studio-freight/lenis'
@@ -12,6 +12,7 @@ import loader from "../../../assets/Vigybag-logo.gif"
 import logo from "../../../assets/Vigybag-logo.png"
 
 // Matrix Rain Effect Component
+
 const MatrixRainEffect = () => {
   const canvasRef = useRef(null)
 
@@ -66,7 +67,7 @@ const MatrixRainEffect = () => {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 z-0"
-      style={{ filter: 'brightness(0.7)' }}
+      style={{ filter: 'brightness(0.7)', overflow: 'hidden' }} // Added overflow hidden to remove x-axis scroll
     />
   )
 }

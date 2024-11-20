@@ -67,7 +67,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center">
               <FaGithub className="mr-2" />
-              <a href="#" className="hover:text-blue-400">vwoc-jgec</a>
+              <a href="#" className="hover:text-blue-400">vwoc</a>
             </li>
             <li className="flex items-center">
               <FaTwitter className="mr-2" />
@@ -76,7 +76,7 @@ const Footer = () => {
             <li className="flex items-center">
               <FaEnvelope className="mr-2" />
               <a href="mailto:contact.vwoc@gmail.com" className="hover:text-blue-400">
-                contact.vwoc@gmail.com
+              vigybagwinterofcode@gmail.com
               </a>
             </li>
           </ul>
