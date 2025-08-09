@@ -1,13 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/Vigybag-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VWoC </title>
+    <title>VWoC | VigyBag Winter of Code</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Global Styles -->
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #22d3ee;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #67e8f9;
+      }
+      
+      /* Selection Styling */
+      ::selection {
+        background: rgba(34, 211, 238, 0.3);
+        color: #fff;
+      }
+      
+      /* Remove focus outline for mouse users but keep for keyboard navigation */
+      *:focus:not(:focus-visible) {
+        outline: none;
+      }
+      
+      *:focus-visible {
+        outline: 2px solid #22d3ee;
+        outline-offset: 2px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-futuristic-dark text-gray-100 font-sans antialiased leading-relaxed">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Sound effects will be loaded dynamically -->
+    <audio id="click-sound" preload="auto">
+      <source src="/src/assets/sounds/click.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="success-sound" preload="auto">
+      <source src="/src/assets/sounds/success.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="error-sound" preload="auto">
+      <source src="/src/assets/sounds/error.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="warning-sound" preload="auto">
+      <source src="/src/assets/sounds/warning.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="loading-sound" preload="auto">
+      <source src="/src/assets/sounds/loading.mp3" type="audio/mpeg">
+    </audio>
   </body>
 </html>
