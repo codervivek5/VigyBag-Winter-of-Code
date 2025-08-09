@@ -157,6 +157,7 @@ const AdminVerificationPage = () => {
               type="email"
               id="email"
               name="email"
+              autoComplete="email"
               value={email}
               onChange={handleEmailChange}
               required
@@ -176,6 +177,9 @@ const AdminVerificationPage = () => {
                 type="text"
                 id="otp"
                 name="otp"
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                pattern="[0-9]*"
                 value={otp}
                 onChange={handleOtpChange}
                 required
